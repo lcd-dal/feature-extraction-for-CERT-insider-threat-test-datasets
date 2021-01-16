@@ -10,7 +10,7 @@ This is a script for extracting features (csv format) from the [CERT insider thr
 ## Extracted Data
 Extracted data is stored in ExtractedData subfolder.
 
-Note that in the extracted data, `insider` is the label indicating the insider threat scenario (0 is normal). Some extracted features (subs_ind, starttime, endtime, sessionid, user, day, week) are for information and may or may not be used in training machne learning approaches.
+Note that in the extracted data, `insider` is the label indicating the insider threat scenario (0 is normal). Some extracted features (subs_ind, starttime, endtime, sessionid, user, day, week) are for information and may or may not be used in training machine learning approaches.
 
 
 ## Citation
