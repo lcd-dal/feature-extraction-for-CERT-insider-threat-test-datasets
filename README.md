@@ -12,6 +12,8 @@ Extracted data is stored in ExtractedData subfolder.
 
 Note that in the extracted data, `insider` is the label indicating the insider threat scenario (0 is normal). Some extracted features (subs_ind, starttime, endtime, sessionid, user, day, week) are for information and may or may not be used in training machine learning approaches.
 
+Pre-extracted data from CERT insidere threat test dataset r5.2 can be found in this [Onedrive folder](https://web.cs.dal.ca/~lcd/data/CERTr5.2/).
+
 
 ## Citation
 D. C. Le, N. Zincir-Heywood and M. I. Heywood, "Analyzing Data Granularity Levels for Insider Threat Detection Using Machine Learning," in IEEE Transactions on Network and Service Management, vol. 17, no. 1, pp. 30-44, March 2020, doi: 10.1109/TNSM.2020.2967721.
