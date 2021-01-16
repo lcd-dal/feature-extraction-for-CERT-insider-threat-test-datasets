@@ -2,7 +2,7 @@
 This is a script for extracting features (csv format) from the [CERT insider threat test dataset](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=508099), versions 4.1 to 6.2. For more details, please see this paper: [Analyzing Data Granularity Levels for Insider Threat Detection Using Machine Learning](https://ieeexplore.ieee.org/document/8962316).
 
 ## Run the script
-- Require python3, numpy, pandas, joblib. The script is written and tested on Linux only.
+- Require python3, numpy, pandas, joblib. The script is written and tested in Linux only.
 - By default the script extracts week, day, session, and sub-session data (as in the paper).
 - To run the script, place it in a folder of a CERT dataset (e.g. r4.2, decompressed from r4.2.tar.bz2 downloaded [here](https://kilthub.cmu.edu/articles/dataset/Insider_Threat_Test_Dataset/12841247/1)), then run `python3 featureExtraction.py`
 - To change number of cores used in parallelization (default 8), use `python3 featureExtraction.py numberOfCores`, e.g `python3 featureExtraction.py 16`.
