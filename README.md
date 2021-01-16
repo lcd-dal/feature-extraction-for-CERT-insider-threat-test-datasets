@@ -1,5 +1,11 @@
 # Feature extraction for CERT insider threat test dataset
-This is a script for extracting features (csv format) from the [CERT insider threat test dataset](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=508099), versions 4.1 to 6.2. For more details, please see this paper: [Analyzing Data Granularity Levels for Insider Threat Detection Using Machine Learning](https://ieeexplore.ieee.org/document/8962316).
+This is a script for extracting features (csv format) from the [CERT insider threat test dataset](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=508099) [[1]](#1), [[2]](#2), versions 4.1 to 6.2. For more details, please see this paper: [Analyzing Data Granularity Levels for Insider Threat Detection Using Machine Learning](https://ieeexplore.ieee.org/document/8962316).
+
+<a id="1">[1]</a> 
+Lindauer, Brian (2020): Insider Threat Test Dataset. Carnegie Mellon University. Dataset. https://doi.org/10.1184/R1/12841247.v1 
+
+<a id="2">[2]</a> 
+J. Glasser and B. Lindauer, "Bridging the Gap: A Pragmatic Approach to Generating Insider Threat Data," 2013 IEEE Security and Privacy Workshops, San Francisco, CA, 2013, pp. 98-104, doi: 10.1109/SPW.2013.37.
 
 ## Run the script
 - Require python3, numpy, pandas, joblib. The script is written and tested in Linux only.
@@ -16,4 +22,6 @@ Pre-extracted data from CERT insider threat test dataset r5.2 (gzipped) can be f
 
 
 ## Citation
+If you use the source code, or the extracted datasets, please cite the following paper:
+
 D. C. Le, N. Zincir-Heywood and M. I. Heywood, "Analyzing Data Granularity Levels for Insider Threat Detection Using Machine Learning," in IEEE Transactions on Network and Service Management, vol. 17, no. 1, pp. 30-44, March 2020, doi: 10.1109/TNSM.2020.2967721.
