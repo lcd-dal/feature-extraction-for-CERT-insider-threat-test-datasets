@@ -944,7 +944,7 @@ if __name__ == "__main__":
     
     subsession_mode = {'nact':[25, 50], 'time':[120, 240]}#this can be an empty dict
     
-    numCores = 12
+    numCores = 8
     arguments = len(sys.argv) - 1
     if arguments > 0:
         numCores = int(sys.argv[1])
