@@ -12,7 +12,7 @@ Extracted data is stored in ExtractedData subfolder.
 
 Note that in the extracted data, `insider` is the label indicating the insider threat scenario (0 is normal). Some extracted features (subs_ind, starttime, endtime, sessionid, user, day, week) are for information and may or may not be used in training machine learning approaches.
 
-Pre-extracted data from CERT insidere threat test dataset r5.2 can be found in this [Onedrive folder](https://web.cs.dal.ca/~lcd/data/CERTr5.2/).
+Pre-extracted data from CERT insidere threat test dataset r5.2 can be found in [here](https://web.cs.dal.ca/~lcd/data/CERTr5.2/).
 
 
 ## Citation
