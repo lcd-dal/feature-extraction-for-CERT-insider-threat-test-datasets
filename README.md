@@ -7,7 +7,7 @@ Lindauer, Brian (2020): Insider Threat Test Dataset. Carnegie Mellon University.
 <a id="2">[2]</a> 
 J. Glasser and B. Lindauer, "Bridging the Gap: A Pragmatic Approach to Generating Insider Threat Data," 2013 IEEE Security and Privacy Workshops, San Francisco, CA, 2013, pp. 98-104, doi: 10.1109/SPW.2013.37.
 
-## Run the script
+## Run featureExtraction script
 - Require python3, numpy, pandas, joblib. The script is written and tested in Linux only.
 - By default the script extracts week, day, session, and sub-session data (as in the paper).
 - To run the script, place it in a folder of a CERT dataset (e.g. r4.2, decompressed from r4.2.tar.bz2 downloaded [here](https://kilthub.cmu.edu/articles/dataset/Insider_Threat_Test_Dataset/12841247/1)), then run `python3 featureExtraction.py`
@@ -20,8 +20,22 @@ Note that in the extracted data, `insider` is the label indicating the insider t
 
 Pre-extracted data from CERT insider threat test dataset r5.2 (gzipped) can be found in [here](https://web.cs.dal.ca/~lcd/data/CERTr5.2/).
 
+## Data representations
+From the extracted data, `temporal_data_representation.py` can be used to generate different data representations, as presented in this paper: [Anomaly Detection for Insider Threats Using Unsupervised Ensembles](https://ieeexplore.ieee.org/document/9399116). 
+
+`python3 temporal_data_representation.py --help`
+
+## Sample classification and anomaly detection results
+Sample code is provided in:
+
+- `classification_sample.py` for classification (as in [Analyzing Data Granularity Levels for Insider Threat Detection Using Machine Learning](https://ieeexplore.ieee.org/document/8962316)).
+- `anomaly_detection_sample.py` for anomaly detection (as in [Anomaly Detection for Insider Threats Using Unsupervised Ensembles](https://ieeexplore.ieee.org/document/9399116)).
 
 ## Citation
 If you use the source code, or the extracted datasets, please cite the following paper:
 
-D. C. Le, N. Zincir-Heywood and M. I. Heywood, "Analyzing Data Granularity Levels for Insider Threat Detection Using Machine Learning," in IEEE Transactions on Network and Service Management, vol. 17, no. 1, pp. 30-44, March 2020, doi: 10.1109/TNSM.2020.2967721.
+`D. C. Le, N. Zincir-Heywood and M. I. Heywood, "Analyzing Data Granularity Levels for Insider Threat Detection Using Machine Learning," in IEEE Transactions on Network and Service Management, vol. 17, no. 1, pp. 30-44, March 2020, doi: 10.1109/TNSM.2020.2967721.`
+
+Data representations and anomaly detection:
+
+`D. C. Le, N. Zincir-Heywood, "Anomaly Detection for Insider Threats Using Unsupervised Ensembles," in IEEE Transactions on Network and Service Management, vol. 18, no. 2, pp. 1152–1164. June 2021, doi:http://doi.org/10.1109/TNSM.2021.3071928.`
