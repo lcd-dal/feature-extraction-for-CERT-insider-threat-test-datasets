@@ -141,9 +141,7 @@ def subtract_percentile_combination(data, dtype, calc_type = 'percentile', windo
     return combined_data
 
 
-if __name__ == "__main__":
-    print('If "too many opened files", or "ForkAwareLocal" error, run ulimit command, e.g. "$ulimit -n 10000" to increase the limit first')
-    
+if __name__ == "__main__":    
     parser=argparse.ArgumentParser()
     parser.add_argument('--representation', help='Data representation to extract (concat, percentile, meandiff, mediandiff). Default: percentile', 
                         type= str, default = 'percentile')
@@ -154,13 +152,13 @@ if __name__ == "__main__":
                         type = int, default=3)
     args=parser.parse_args()    
     
-    
+    print('If "too many opened files", or "ForkAwareLocal" error, run ulimit command, e.g. "$ulimit -n 10000" to increase the limit first')
     if args.representation == 'all':
         reps = ['concat', 'percentile','meandiff','meddiff']
     elif args.representation in ['concat', 'percentile','meandiff','meddiff']:
         reps = [args.representation]
         
-    fileName = (args.file_input).split('.')[0]
+    fileName = (args.file_input).replace('.csv','').replace('.gz','')
     if 'day' in fileName:
         data_type = 'day'
     elif 'week' in fileName:

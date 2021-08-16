@@ -9,7 +9,7 @@ from sklearn.metrics import recall_score, classification_report, f1_score, accur
 print('This script trains a sample classifier (using simple RandomForestClassifier) '
       'on CERT dataset. By default it takes CERT r5.2 extracted day data '
       'downloaded from https://web.cs.dal.ca/~lcd/data/CERTr5.2/'
-      ', train on data of 200 random users in first half of the dataset, '
+      ', train on data of 400 users in first half of the dataset, '
       'then output classification report (instance-based)')
 
 print('For more details, see this paper: Analyzing Data Granularity Levels for'
