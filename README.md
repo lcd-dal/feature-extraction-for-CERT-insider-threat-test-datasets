@@ -7,11 +7,11 @@ Lindauer, Brian (2020): Insider Threat Test Dataset. Carnegie Mellon University.
 <a id="2">[2]</a> 
 J. Glasser and B. Lindauer, "Bridging the Gap: A Pragmatic Approach to Generating Insider Threat Data," 2013 IEEE Security and Privacy Workshops, San Francisco, CA, 2013, pp. 98-104, doi: 10.1109/SPW.2013.37.
 
-## Run feature_etraction script
+## Run feature_extraction script
 - Require python3, numpy, pandas, joblib. The script is written and tested in Linux only.
 - By default the script extracts week, day, session, and sub-session data (as in the paper).
-- To run the script, place it in a folder of a CERT dataset (e.g. r4.2, decompressed from r4.2.tar.bz2 downloaded [here](https://kilthub.cmu.edu/articles/dataset/Insider_Threat_Test_Dataset/12841247/1)), then run `python3 feature_etraction.py`
-- To change number of cores used in parallelization (default 8), use `python3 feature_etraction.py numberOfCores`, e.g `python3 feature_etraction.py 16`.
+- To run the script, place it in a folder of a CERT dataset (e.g. r4.2, decompressed from r4.2.tar.bz2 downloaded [here](https://kilthub.cmu.edu/articles/dataset/Insider_Threat_Test_Dataset/12841247/1)), then run `python3 feature_extraction.py`
+- To change number of cores used in parallelization (default 8), use `python3 feature_extraction.py numberOfCores`, e.g `python3 feature_extraction.py 16`.
 
 ## Extracted Data
 Extracted data is stored in ExtractedData subfolder.
