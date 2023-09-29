@@ -75,7 +75,8 @@ def add_action_thisweek(act, columns, lines, act_handles, week_index, stop, firs
     df = pd.DataFrame(thisweek_act, columns=columns)
     df['type']= act
     df.index = df['id']
-    df.drop('id',1, inplace = True)
+    df.drop('id', axis=1, inplace=True)
+
     return df
 
 def combine_by_timerange_pandas(dname = 'r4.2'):
@@ -116,8 +117,7 @@ def combine_by_timerange_pandas(dname = 'r4.2'):
                 if dname in ['r5.2','r5.1','r6.2','r6.1']: columns = ['id', 'date', 'user', 'pc', 'url/fname','activity','to','from','content']
             
             df = add_action_thisweek(act, columns, lines, act_handles, week_index, stop, firstdate, dname=dname)
-            thisweekdf = thisweekdf.append(df, sort=False)
-        
+        thisweekdf = pd.concat([thisweekdf, df], ignore_index=True)        
         thisweekdf['date'] = thisweekdf['date'].apply(lambda x: datetime.strptime(x, "%m/%d/%Y %H:%M:%S"))
         thisweekdf.to_pickle("DataByWeek/"+str(week_index)+".pickle")
         week_index += 1
